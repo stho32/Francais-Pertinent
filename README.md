@@ -27,4 +27,4 @@ Lancez `ng e2e` pour executer les test de bout-en-bout via la platforme de votre
 
 ## Plus d'aide
 
-Pour avoir plus d'aide sur Angular CLU utilisez `ng help` où allez voir la page web[Angular CLI Overview and Command Reference](https://angular.io/cli).
+Pour avoir plus d'aide sur Angular CLI utilisez `ng help` où allez voir la page web[Angular CLI Overview and Command Reference](https://angular.io/cli).
