@@ -1,0 +1,26 @@
+.question_choix {
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.question_choix-question {
+    background-color: #ccffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.question_choix-reponse-bloc {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.question_choix-reponse {
+    background-color: #ccffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
