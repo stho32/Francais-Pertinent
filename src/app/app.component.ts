@@ -9,6 +9,15 @@ import { Question, Reponse, questions } from './des-questions';
 export class AppComponent {
   title = 'Francais-Pertinent';
   questions = questions;
-  currentQuestion = 1;
+  currentQuestion = 0;
   question = questions[this.currentQuestion];
+
+  prochaineQuestion() {
+    this.currentQuestion += 1;
+    this.question = questions[this.currentQuestion];
+  }
+
+  valider() {
+    alert(this.question.reponses[0].selectionne);
+  }
 }
