@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Question, Reponse, questions } from './des-questions';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Francais-Pertinent';
+  questions = questions;
+  currentQuestion = 1;
+  question = questions[this.currentQuestion];
 }

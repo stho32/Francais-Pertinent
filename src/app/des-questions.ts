@@ -11,12 +11,12 @@ export interface Question {
     reponses : Reponse[];
   }
   
-  export const products = [
+  export const questions = [
     {
         id: 1,
         theme: "Avoir ou être",
         question: "Repondre en français: How old are you?",
-        reponse: [
+        reponses: [
             {id: 1, text: "Je suis ...", correct: false},
             {id: 2, text: "Je serai ...", correct: false},
             {id: 3, text: "J'ai ...", correct: true},
@@ -27,7 +27,7 @@ export interface Question {
         id: 2,
         theme: "Avoir ou être",
         question: "You have arrived at the destination.",
-        reponse: [
+        reponses: [
             {id: 1, text: "Vous avez arrivé à destination.", correct: false},
             {id: 2, text: "Tu as arrivé à destination.", correct: false},
             {id: 3, text: "Vous etes arrivé à destination.", correct: true},
@@ -38,7 +38,7 @@ export interface Question {
         id: 3,
         theme: "Avoir ou être",
         question: "'I went' in french is ...",
-        reponse: [
+        reponses: [
             {id: 1, text: "J'ai allé.", correct: false},
             {id: 2, text: "Je suis allé.", correct: true}
         ]
