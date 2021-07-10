@@ -18,6 +18,18 @@ export class AppComponent {
   }
 
   valider() {
-    alert(this.question.reponses[0].selectionne);
+    let bonneReponse = true;
+
+    for (let i = 0; i < this.question.reponses.length; i++) {
+      bonneReponse = bonneReponse &&
+        ( this.question.reponses[i].selectionne == this.question.reponses[i].correct);
+    }
+
+    if ( bonneReponse ) {
+      alert("Oui!");
+      this.prochaineQuestion();
+    } else {
+      alert("Non!");
+    }
   }
 }
