@@ -47,10 +47,11 @@ const tousDesQuestions = [
   {
     id : 4,
     theme: "Être ou Aller",
-    question: "La plu des gens vent",
+    question: "Most of the people are on holidays.",
     reponses: [
-      { id: 1, text: "J'ai allé.", correct: false, selectionne: false },
-      { id: 2, text: "Je suis allé.", correct: true, selectionne: false }
+      { id: 1, text: "La pluparts des gens vont en vacances.", correct: false, selectionne: false },
+      { id: 2, text: "La pluparts des gens sont en vacances.", correct: true, selectionne: false },
+      { id: 3, text: "La pluparts des gens est en vacances.", correct: false, selectionne: false }
     ]
   },
   {
@@ -99,6 +100,17 @@ const tousDesQuestions = [
       { id: 2, text: "Je fais plusieurs erreurs.", correct: false, selectionne: false },
       { id: 3, text: "Je fais beaucoup des erreurs.", correct: false, selectionne: false },
       { id: 4, text: "Je fais beaucoup de erreurs.", correct: false, selectionne: false }
+    ]
+  },
+  {
+    id : 10,
+    theme: "Autre choses",
+    question:  "I am going to ...",
+    reponses: [
+      { id: 1, text: "Je va ...", correct: false, selectionne: false },
+      { id: 2, text: "Je vais ...", correct: true, selectionne: false },
+      { id: 3, text: "Je vas ...", correct: false, selectionne: false },
+      { id: 4, text: "Je suis ...", correct: false, selectionne: false },
     ]
   }
 ];
