@@ -43,6 +43,63 @@ const tousDesQuestions = [
       { id: 1, text: "J'ai allé.", correct: false, selectionne: false },
       { id: 2, text: "Je suis allé.", correct: true, selectionne: false }
     ]
+  },
+  {
+    id : 4,
+    theme: "Être ou Aller",
+    question: "La plu des gens vent",
+    reponses: [
+      { id: 1, text: "J'ai allé.", correct: false, selectionne: false },
+      { id: 2, text: "Je suis allé.", correct: true, selectionne: false }
+    ]
+  },
+  {
+    id : 5,
+    theme: "Être ou Aller",
+    question: "I hope that you are ok/are doing well.",
+    reponses: [
+      { id: 1, text: "J'espere que tu es bien.", correct: false, selectionne: false },
+      { id: 2, text: "J'espere que tu vas bien.", correct: true, selectionne: false }
+    ]
+  },
+  {
+    id : 6,
+    theme: "Temps",
+    question: "Time flies.",
+    reponses: [
+      { id: 1, text: "Le temps passe vite.", correct: true, selectionne: false },
+      { id: 2, text: "La temps passe vite.", correct: false, selectionne: false },
+      { id: 3, text: "Le temps court vite.", correct: false, selectionne: false },
+    ]
+  },
+  {
+    id : 7,
+    theme: "Feminin / Masculin",
+    question: "question",
+    reponses: [
+      { id: 1, text: "une", correct: true, selectionne: false },
+      { id: 2, text: "un", correct: false, selectionne: false }
+    ]
+  },
+  {
+    id : 8,
+    theme: "Feminin / Masculin",
+    question: "table",
+    reponses: [
+      { id: 1, text: "la", correct: true, selectionne: false },
+      { id: 2, text: "le", correct: false, selectionne: false }
+    ]
+  },
+  {
+    id : 9,
+    theme: "Feminin / Masculin",
+    question:  "I make a lot of mistakes.",
+    reponses: [
+      { id: 1, text: "Je fais beaucoup d'erreurs.", correct: true, selectionne: false },
+      { id: 2, text: "Je fais plusieurs erreurs.", correct: false, selectionne: false },
+      { id: 3, text: "Je fais beaucoup des erreurs.", correct: false, selectionne: false },
+      { id: 4, text: "Je fais beaucoup de erreurs.", correct: false, selectionne: false }
+    ]
   }
 ];
 
