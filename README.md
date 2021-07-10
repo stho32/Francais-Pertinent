@@ -1,6 +1,8 @@
 # FrancaisPertinent
 Une application pour faciliter l'acquisition du francais
 
+[Entraînes toi ici!](https://stho32.github.io/Francais-Pertinent/dist/Francais-Pertinent/index.html)
+
 ## Angular en francais
 
 Ce projet est generé avec [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
