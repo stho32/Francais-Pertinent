@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Question, Reponse, questions } from './des-questions';
+import { Question, questionLoading } from './des-questions';
 
 @Component({
   selector: 'app-root',
@@ -8,28 +8,36 @@ import { Question, Reponse, questions } from './des-questions';
 })
 export class AppComponent {
   title = 'Francais-Pertinent';
-  questions = questions;
+  questions = [];
   currentQuestion = 0;
-  question = questions[this.currentQuestion];
+  question : Question | undefined;
+
+  myLoadingProcess = questionLoading((questionsFromAjax) => {
+    this.questions = questionsFromAjax;
+    this.question = this.questions[0];
+    console.log("Loading complete! First question assigned!");
+  });
 
   prochaineQuestion() {
     this.currentQuestion += 1;
-    this.question = questions[this.currentQuestion];
+    this.question = this.questions[this.currentQuestion];
   }
 
   valider() {
     let bonneReponse = true;
 
-    for (let i = 0; i < this.question.reponses.length; i++) {
-      bonneReponse = bonneReponse &&
-        ( this.question.reponses[i].selectionne == this.question.reponses[i].correct);
-    }
-
-    if ( bonneReponse ) {
-      alert("Oui!");
-      this.prochaineQuestion();
-    } else {
-      alert("Non!");
+    if (this.question != undefined) {
+      for (let i = 0; i < this.question.reponses.length; i++) {
+        bonneReponse = bonneReponse &&
+          ( this.question.reponses[i].selectionne == this.question.reponses[i].correct);
+      }
+  
+      if ( bonneReponse ) {
+        alert("Oui!");
+        this.prochaineQuestion();
+      } else {
+        alert("Non!");
+      }
     }
   }
 }

@@ -1,12 +1,12 @@
-<h2>{{ question.theme }}</h2>
+<h2>{{ question?.theme }}</h2>
 
 <div class="question_choix">
     <div class="question_choix-question">
-        {{ question.question }}
+        {{ question?.question }}
     </div>
 
     <div class="question_choix-reponse-bloc">
-        <div *ngFor="let reponse of question.reponses">
+        <div *ngFor="let reponse of question?.reponses">
             <app-question-reponse [reponse]="reponse"></app-question-reponse>
         </div>
     </div>
