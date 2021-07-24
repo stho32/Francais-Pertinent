@@ -115,6 +115,16 @@ const tousDesQuestions = [
   }
 ];
 
+export async function tousDesQuestions2(
+  request: RequestInfo
+): Promise<any> {
+  const response = await fetch(request);
+  const body = await response.json();
+  return body;
+}
+
+const data = tousDesQuestions2("http://scaling-giggle-api.duckdns.org:8080/training/cd46bbcc-764c-4ee4-b91f-4528e8f95604").then((data) => console.log(data))
+
 function shuffle(a : any[]) {
   var j, x, i;
   for (i = a.length - 1; i > 0; i--) {
