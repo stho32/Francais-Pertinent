@@ -21,7 +21,7 @@ async function ajaxRequest(
 }
 
 function QuestionLoading(callback: (questions: any) => void) {
-  ajaxRequest("http://scaling-giggle-api.duckdns.org:8080/training/cd46bbcc-764c-4ee4-b91f-4528e8f95604")
+  ajaxRequest("https://scaling-giggle-api.duckdns.org:8080/training/cd46bbcc-764c-4ee4-b91f-4528e8f95604")
     .then((data) => 
     {
       callback(QuestionsReponsesAleatoires(data));
